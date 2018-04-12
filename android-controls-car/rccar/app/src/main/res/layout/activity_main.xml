@@ -25,4 +25,53 @@
         android:text="STOP"
         android:layout_below="@+id/backwardBtn"/>
 
+    <Button
+        android:id="@+id/clockwiseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLOCKWISE"
+        android:layout_below="@+id/stopBtn"/>
+
+    <Button
+        android:id="@+id/anticlockwiseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANTICLOCKWISE"
+        android:layout_below="@+id/clockwiseBtn"/>
+
+    <Button
+        android:id="@+id/speed1Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED 1"
+        android:layout_below="@+id/anticlockwiseBtn"/>
+
+    <Button
+        android:id="@+id/speed2Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED 2"
+        android:layout_below="@+id/speed1Btn"/>
+
+    <Button
+        android:id="@+id/speed3Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED 3"
+        android:layout_below="@+id/speed2Btn"/>
+
+    <Button
+        android:id="@+id/speed4Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED 4"
+        android:layout_below="@+id/speed3Btn"/>
+
+    <Button
+        android:id="@+id/speed5Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SPEED 5"
+        android:layout_below="@+id/speed4Btn"/>
+
 </RelativeLayout>

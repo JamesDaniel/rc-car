@@ -11,7 +11,7 @@ import com.loopj.android.http.RequestParams;
 public class HttpUtils {
 
     // todo Enter the endpoint plus port
-    private static final String BASE_URL = "";
+    private static final String BASE_URL = "http://192.168.43.137:5002";
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 
