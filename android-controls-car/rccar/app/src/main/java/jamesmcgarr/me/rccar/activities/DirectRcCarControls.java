@@ -12,7 +12,7 @@ import jamesmcgarr.me.rccar.R;
 import jamesmcgarr.me.rccar.utils.AppConstants;
 import jamesmcgarr.me.rccar.utils.HttpUtils;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class DirectRcCarControls extends AppCompatActivity implements View.OnClickListener{
 
     private Button instruction0Btn;
     private Button instruction1Btn;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_direct_rc_car_controls);
 
         instruction0Btn = findViewById(R.id.instruction0Btn);
         instruction1Btn = findViewById(R.id.instruction1Btn);
