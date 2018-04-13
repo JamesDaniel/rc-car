@@ -6,72 +6,72 @@
     tools:context="jamesmcgarr.me.rccar.activities.MainActivity">
 
     <Button
-        android:id="@+id/forwardBtn"
+        android:id="@+id/instruction0Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="FORWARD"/>
 
     <Button
-        android:id="@+id/backwardBtn"
+        android:id="@+id/instruction1Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BACKWARD"
-        android:layout_below="@+id/forwardBtn"/>
+        android:layout_below="@+id/instruction0Btn"/>
 
     <Button
-        android:id="@+id/stopBtn"
+        android:id="@+id/instruction2Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="STOP"
-        android:layout_below="@+id/backwardBtn"/>
+        android:layout_below="@+id/instruction1Btn"/>
 
     <Button
-        android:id="@+id/clockwiseBtn"
+        android:id="@+id/instruction3Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIT-CLOCKWISE"
+        android:layout_below="@+id/instruction2Btn"/>
+
+    <Button
+        android:id="@+id/instruction4Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CLOCKWISE"
-        android:layout_below="@+id/stopBtn"/>
+        android:layout_below="@+id/instruction3Btn"/>
 
     <Button
-        android:id="@+id/anticlockwiseBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ANTICLOCKWISE"
-        android:layout_below="@+id/clockwiseBtn"/>
-
-    <Button
-        android:id="@+id/speed1Btn"
+        android:id="@+id/instruction5Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SPEED 1"
-        android:layout_below="@+id/anticlockwiseBtn"/>
+        android:layout_below="@+id/instruction4Btn"/>
 
     <Button
-        android:id="@+id/speed2Btn"
+        android:id="@+id/instruction6Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SPEED 2"
-        android:layout_below="@+id/speed1Btn"/>
+        android:layout_below="@+id/instruction5Btn"/>
 
     <Button
-        android:id="@+id/speed3Btn"
+        android:id="@+id/instruction7Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SPEED 3"
-        android:layout_below="@+id/speed2Btn"/>
+        android:layout_below="@+id/instruction6Btn"/>
 
     <Button
-        android:id="@+id/speed4Btn"
+        android:id="@+id/instruction8Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SPEED 4"
-        android:layout_below="@+id/speed3Btn"/>
+        android:layout_below="@+id/instruction7Btn"/>
 
     <Button
-        android:id="@+id/speed5Btn"
+        android:id="@+id/instruction9Btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SPEED 5"
-        android:layout_below="@+id/speed4Btn"/>
+        android:layout_below="@+id/instruction8Btn"/>
 
 </RelativeLayout>

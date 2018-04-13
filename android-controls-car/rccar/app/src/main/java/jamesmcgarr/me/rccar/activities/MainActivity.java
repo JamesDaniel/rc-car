@@ -14,77 +14,77 @@ import jamesmcgarr.me.rccar.utils.HttpUtils;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button forwardBtn;
-    private Button backwardBtn;
-    private Button stopBtn;
-    private Button clockwiseBtn;
-    private Button anticlockwiseBtn;
-    private Button speed1Btn;
-    private Button speed2Btn;
-    private Button speed3Btn;
-    private Button speed4Btn;
-    private Button speed5Btn;
+    private Button instruction0Btn;
+    private Button instruction1Btn;
+    private Button instruction2Btn;
+    private Button instruction3Btn;
+    private Button instruction4Btn;
+    private Button instruction5Btn;
+    private Button instruction6Btn;
+    private Button instruction7Btn;
+    private Button instruction8Btn;
+    private Button instruction9Btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        forwardBtn = findViewById(R.id.forwardBtn);
-        backwardBtn = findViewById(R.id.backwardBtn);
-        stopBtn = findViewById(R.id.stopBtn);
-        clockwiseBtn = findViewById(R.id.clockwiseBtn);
-        anticlockwiseBtn = findViewById(R.id.anticlockwiseBtn);
-        speed1Btn = findViewById(R.id.speed1Btn);
-        speed2Btn = findViewById(R.id.speed2Btn);
-        speed3Btn = findViewById(R.id.speed3Btn);
-        speed4Btn = findViewById(R.id.speed4Btn);
-        speed5Btn = findViewById(R.id.speed5Btn);
+        instruction0Btn = findViewById(R.id.instruction0Btn);
+        instruction1Btn = findViewById(R.id.instruction1Btn);
+        instruction2Btn = findViewById(R.id.instruction2Btn);
+        instruction3Btn = findViewById(R.id.instruction3Btn);
+        instruction4Btn = findViewById(R.id.instruction4Btn);
+        instruction5Btn = findViewById(R.id.instruction5Btn);
+        instruction6Btn = findViewById(R.id.instruction6Btn);
+        instruction7Btn = findViewById(R.id.instruction7Btn);
+        instruction8Btn = findViewById(R.id.instruction8Btn);
+        instruction9Btn = findViewById(R.id.instruction9Btn);
 
 
-        forwardBtn.setOnClickListener(this);
-        backwardBtn.setOnClickListener(this);
-        stopBtn.setOnClickListener(this);
-        clockwiseBtn.setOnClickListener(this);
-        anticlockwiseBtn.setOnClickListener(this);
-        speed1Btn.setOnClickListener(this);
-        speed2Btn.setOnClickListener(this);
-        speed3Btn.setOnClickListener(this);
-        speed4Btn.setOnClickListener(this);
-        speed5Btn.setOnClickListener(this);
+        instruction0Btn.setOnClickListener(this);
+        instruction1Btn.setOnClickListener(this);
+        instruction2Btn.setOnClickListener(this);
+        instruction3Btn.setOnClickListener(this);
+        instruction4Btn.setOnClickListener(this);
+        instruction5Btn.setOnClickListener(this);
+        instruction6Btn.setOnClickListener(this);
+        instruction7Btn.setOnClickListener(this);
+        instruction8Btn.setOnClickListener(this);
+        instruction9Btn.setOnClickListener(this);
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.forwardBtn:
-                HttpUtils.get(AppConstants.FORWARD_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction0Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION3_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.backwardBtn:
-                HttpUtils.get(AppConstants.BACKWARD_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction1Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION4_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.stopBtn:
-                HttpUtils.get(AppConstants.STOP_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction2Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION0_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.clockwiseBtn:
-                HttpUtils.get(AppConstants.CLOCKWISE_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction3Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION1_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.anticlockwiseBtn:
-                HttpUtils.get(AppConstants.ANTICLOCKWISE_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction4Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION2_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.speed1Btn:
-                HttpUtils.get(AppConstants.SPEED1_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction5Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION5_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.speed2Btn:
-                HttpUtils.get(AppConstants.SPEED2_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction6Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION6_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.speed3Btn:
-                HttpUtils.get(AppConstants.SPEED3_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction7Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION7_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.speed4Btn:
-                HttpUtils.get(AppConstants.SPEED4_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction8Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION8_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
-            case R.id.speed5Btn:
-                HttpUtils.get(AppConstants.SPEED5_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
+            case R.id.instruction9Btn:
+                HttpUtils.get(AppConstants.INSTRUCTION9_COMMAND, new RequestParams(), new JsonHttpResponseHandler());
                 break;
         }
     }
