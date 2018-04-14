@@ -7,6 +7,7 @@
     tools:context=".activities.NeuroSkySetupActivity">
 
     <TextView
+        android:id="@+id/rawEegTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NeuroSky setup"/>

@@ -27,4 +27,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 // https://mvnrepository.com/artifact/com.loopj.android/android-async-http
     compile group: 'com.loopj.android', name: 'android-async-http', version: '1.4.9'
+
+    compile files('libs/ThinkGearBase.jar')
+    compile files('libs/ThinkGearPackX.jar')
+    compile files('libs/achartengine-0.7.0.jar')
 }
